@@ -6,7 +6,7 @@ Firstly, we will pass the chosen dataset in the argument  of dataset and set the
 python train.py --dataset DTD --batch_size 16 --epochs 50 --save EfficientNetB0_DTD
 ```
 
-We are using dataset which are:
+The datset we are using:
 * [CIFAR10](https://pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR10.html#torchvision.datasets.CIFAR10)
 * [CIFAR100](https://pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR100.html#torchvision.datasets.CIFAR100)
 * [DTD](https://pytorch.org/vision/stable/generated/torchvision.datasets.DTD.html#torchvision.datasets.DTD)
