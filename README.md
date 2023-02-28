@@ -7,11 +7,11 @@ python train.py --dataset DTD --batch_size 16 --epochs 50 --save EfficientNetB0_
 
 # Datasets
 --dataset argument can be chaged with followig datasets
-STL10
-Cifar10
-Cifar100
-DTD
-flower102
-food101
-OxfordIIITPet
-CINIC10
+ STL10
+ Cifar10
+ Cifar100
+ DTD
+ flower102
+ food101
+ OxfordIIITPet
+ CINIC10
