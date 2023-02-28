@@ -35,3 +35,7 @@ Include the benchmark results of running multiple model precisions.
 |EfficientNETB0| Pets     | 37     | 224X224  |50     |65.16304|
 |MobileNET_V2  | Pets     | 37     | 224X224  |50     |76.60356|
 |EFficientNETB0| STL10    |10      | 224x224  |20     |63.00004|
+|EfficientNETB0| Food101  |101     | 224x224  |20     |        |
+|MobileNET_V2  | Food101  |101     |224x224   |20     |51.04505|
+
+
