@@ -114,13 +114,6 @@ def main():
     test_data = torchvision.datasets.STL10(root=args.data_dir, train=False,
                                            download=True, transform=test_transform)
 
-  if args.dataset == 'CINIC10':
-    train_data = torchvision.datasets.CINIC10(root='./data', train=True,
-                                        download=True, transform=train_transform)
-   
-    test_data = torchvision.datasets.CINIC10(root='./data', train=False,
-                                           download=True, transform=test_transform)
-
   if args.dataset =='flower102':
     train_data = torchvision.datasets.Flowers102(root='./data', split='trainval',
                                         download=True, transform=train_transform)
@@ -232,6 +225,9 @@ def main():
                      "hibiscus", "columbine", "desert-rose", "tree mallow", "magnolia", "cyclamen", "watercress", "canna lily", "hippeastrum", 
                      "bee balm", "ball moss", "foxglove", "bougainvillea", "camellia", "mallow", "mexican petunia", "bromelia", 
                      "blanket flower", "trumpet creeper", "blackberry lily"]
+    
+    if args.dataset == 'CINIC10':
+      total_classes = ['airplane', 'automobile','bird','cat','deer','dog','frog','horse','ship','truck']
     
   for i in range(len(total_classes)):
     class_labels.append(i)
