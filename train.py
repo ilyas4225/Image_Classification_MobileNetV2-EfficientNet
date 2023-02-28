@@ -20,7 +20,7 @@ from torch.autograd import Variable
 from Subsets import *
 from models import *
 
-parser = argparse.ArgumentParser("cifar10")
+parser = argparse.ArgumentParser("Classification")
 parser.add_argument('--data', type=str, default='/home/msiddi01/ImageNet_Vehicles', help='location of the data corpus')
 parser.add_argument('--use_model', type=str, default='Conv', help='Sep or Conv')
 parser.add_argument('--batch_size', type=int, default=64, help='batch size')
@@ -178,12 +178,11 @@ def main():
 
   if args.dataset == 'Pets':
     total_classes = ['Abyssinian', 'American Bulldog', 'American Pit Bull Terrier', 'Basset Hound',
-     'Beagle', 'Bengal', 'Birman', 'Bombay', 'Boxer', 'British Shorthair', 'Chihuahua', 'Egyptian Mau',
-      'English Cocker Spaniel', 'English Setter', 'German Shorthaired', 'Great Pyrenees', 'Havanese', 
-      'Japanese Chin', 'Keeshond', 'Leonberger', 'Maine Coon', 'Miniature Pinscher', 'Newfoundland', 
-      'Persian', 'Pomeranian', 'Pug', 'Ragdoll', 'Russian Blue', 'Saint Bernard', 'Samoyed', 
-      'Scottish Terrier', 'Shiba Inu', 'Siamese', 'Sphynx', 'Staffordshire Bull Terrier', 
-      'Wheaten Terrier', 'Yorkshire Terrier']
+                     'Beagle', 'Bengal', 'Birman', 'Bombay', 'Boxer', 'British Shorthair', 'Chihuahua', 'Egyptian Mau',
+                     'English Cocker Spaniel', 'English Setter', 'German Shorthaired', 'Great Pyrenees', 'Havanese', 
+                     'Japanese Chin', 'Keeshond', 'Leonberger', 'Maine Coon', 'Miniature Pinscher', 'Newfoundland', 'Persian',
+                     'Pomeranian', 'Pug', 'Ragdoll', 'Russian Blue', 'Saint Bernard', 'Samoyed', 'Scottish Terrier', 'Shiba Inu',
+                     'Siamese', 'Sphynx', 'Staffordshire Bull Terrier', 'Wheaten Terrier', 'Yorkshire Terrier']
     
   if args.dataset == 'Food101':
      total_classes = ['macarons', 'french_toast', 'lobster_bisque', 'prime_rib', 'pork_chop', 'guacamole', 'baby_back_ribs', 'mussels', 'beef_carpaccio', 'poutine',
@@ -198,40 +197,41 @@ def main():
                     'pancakes', 'fried_rice', 'cheese_plate', 'onion_rings', 'escargots', 'sashimi', 'pad_thai', 'french_fries']
   
   if args.dataset == 'cifar100':
-    total_classes = ['apple', 'aquarium_fish', 'baby', 'bear', 'beaver', 'bed', 'bee', 'beetle', 'bicycle', 'bottle', 'bowl', 'boy', 'bridge', 'bus', 'butterfly', 'camel', 'can',
-     'castle', 'caterpillar', 'cattle', 'chair', 'chimpanzee', 'clock', 'cloud', 'cockroach', 'couch', 'crab', 
-     'crocodile', 'cup', 'dinosaur', 'dolphin', 'elephant', 'flatfish', 'forest', 'fox', 'girl', 'hamster', 
-     'house', 'kangaroo', 'keyboard', 'lamp', 'lawn_mower', 'leopard', 'lion', 'lizard', 'lobster', 'man',
-      'maple_tree', 'motorcycle', 'mountain', 'mouse', 'mushroom', 'oak_tree', 'orange', 'orchid', 'otter', 
-      'palm_tree', 'pear', 'pickup_truck', 'pine_tree', 'plain', 'plate', 'poppy', 'porcupine', 'possum', 
-      'rabbit', 'raccoon', 'ray', 'road', 'rocket', 'rose', 'sea', 'seal', 'shark', 'shrew', 'skunk',
-       'skyscraper', 'snail', 'snake', 'spider', 'squirrel', 'streetcar', 'sunflower', 'sweet_pepper', 
-       'table', 'tank', 'telephone', 'television', 'tiger', 'tractor', 'train', 'trout', 'tulip', 'turtle',
-        'wardrobe', 'whale', 'willow_tree', 'wolf', 'woman', 'worm']
+    total_classes = ['apple', 'aquarium_fish', 'baby', 'bear', 'beaver', 'bed', 'bee', 'beetle', 'bicycle', 'bottle', 
+                     'bowl', 'boy', 'bridge', 'bus', 'butterfly', 'camel', 'can','castle', 'caterpillar', 'cattle', 
+                     'chair', 'chimpanzee', 'clock', 'cloud', 'cockroach', 'couch', 'crab', 'crocodile', 'cup', 
+                     'dinosaur', 'dolphin', 'elephant', 'flatfish', 'forest', 'fox', 'girl', 'hamster', 'house', 'kangaroo', 
+                     'keyboard', 'lamp', 'lawn_mower', 'leopard', 'lion', 'lizard', 'lobster', 'man','maple_tree', 'motorcycle',
+                     'mountain', 'mouse', 'mushroom', 'oak_tree', 'orange', 'orchid', 'otter', 'palm_tree', 'pear', 'pickup_truck', 
+                     'pine_tree', 'plain', 'plate', 'poppy', 'porcupine', 'possum', 'rabbit', 'raccoon', 'ray', 'road', 'rocket',
+                     'rose', 'sea', 'seal', 'shark', 'shrew', 'skunk','skyscraper', 'snail', 'snake', 'spider', 'squirrel', 
+                     'streetcar', 'sunflower', 'sweet_pepper', 'table', 'tank', 'telephone', 'television', 'tiger', 'tractor', 'train',
+                     'trout', 'tulip', 'turtle','wardrobe', 'whale', 'willow_tree', 'wolf', 'woman', 'worm']
     
   if args.dataset == 'DTD':
     total_classes = ['banded', 'blotchy', 'braided', 'bubbly', 'bumpy', 'chequered', 'cobwebbed', 'cracked', 'crosshatched',  
-              'crystalline', 'dotted', 'fibrous', 'flecked', 'frothy', 'gauzy', 'grid', 'grooved', 'herringbone',   
-               'interlaced', 'knitted', 'lacelike', 'lined', 'marbled', 'matted', 'meshed', 'paisley', 'patterned',  
-               'plaid', 'polka-dotted', 'porous', 'radial', 'ribbed', 'scaled', 'smeared', 'spangled', 'speckled',
-               'stippled', 'striped', 'studded', 'swirly', 'veined', 'waffled', 'woven', 'wrinkled', 'zigzagged',
-                'homogeneous', 'non-homogeneous']
+                     'crystalline', 'dotted', 'fibrous', 'flecked', 'frothy', 'gauzy', 'grid', 'grooved', 'herringbone',   
+                     'interlaced', 'knitted', 'lacelike', 'lined', 'marbled', 'matted', 'meshed', 'paisley', 'patterned',  
+                     'plaid', 'polka-dotted', 'porous', 'radial', 'ribbed', 'scaled', 'smeared', 'spangled', 'speckled',
+                     'stippled', 'striped', 'studded', 'swirly', 'veined', 'waffled', 'woven', 'wrinkled', 'zigzagged',
+                     'homogeneous', 'non-homogeneous']
     
   if args.dataset == 'flower102':
     total_classes = ["pink primrose", "hard-leaved pocket orchid", "canterbury bells", "sweet pea", "english marigold", 
-    "tiger lily", "moon orchid", "bird of paradise", "monkshood", "globe thistle", "snapdragon",
-     "colt's foot", "king protea", "spear thistle", "yellow iris", "globe-flower", "purple coneflower", "peruvian lily",
-    "balloon flower", "giant white arum lily", "fire lily", "pincushion flower", "fritillary", "red ginger", "grape hyacinth",
-    "corn poppy", "prince of wales feathers", "stemless gentian", "artichoke", "sweet william", "carnation", "garden phlox", 
-    "love in the mist", "mexican aster", "alpine sea holly", "ruby-lipped cattleya", "cape flower", "great masterwort", 
-    "siam tulip", "lenten rose", "barbeton daisy", "daffodil", "sword lily", "poinsettia", "bolero deep blue", "wallflower", 
-    "marigold", "buttercup", "oxeye daisy", "common dandelion", "petunia", "wild pansy", "primula", "sunflower", "pelargonium", 
-    "bishop of llandaff", "gaura", "geranium", "orange dahlia", "pink-yellow dahlia", "cautleya spicata", "japanese anemone", 
-    "black-eyed susan", "silverbush", "californian poppy", "osteospermum", "spring crocus", "bearded iris", "windflower", "tree poppy", 
-    "gazania", "azalea", "water lily", "rose", "thorn apple", "morning glory", "passion flower", "lotus", "toad lily", "anthurium", 
-    "frangipani", "clematis", "hibiscus", "columbine", "desert-rose", "tree mallow", "magnolia", "cyclamen", "watercress", 
-    "canna lily", "hippeastrum", "bee balm", "ball moss", "foxglove", "bougainvillea", "camellia", "mallow", "mexican petunia", 
-    "bromelia", "blanket flower", "trumpet creeper", "blackberry lily"]
+                     "tiger lily", "moon orchid", "bird of paradise", "monkshood", "globe thistle", "snapdragon","colt's foot", 
+                     "king protea", "spear thistle", "yellow iris", "globe-flower", "purple coneflower", "peruvian lily",
+                     "balloon flower", "giant white arum lily", "fire lily", "pincushion flower", "fritillary", "red ginger",
+                     "grape hyacinth","corn poppy", "prince of wales feathers", "stemless gentian", "artichoke", "sweet william",
+                     "carnation", "garden phlox", "love in the mist", "mexican aster", "alpine sea holly", "ruby-lipped cattleya", 
+                     "cape flower", "great masterwort", "siam tulip", "lenten rose", "barbeton daisy", "daffodil", "sword lily", 
+                     "poinsettia", "bolero deep blue", "wallflower", "marigold", "buttercup", "oxeye daisy", "common dandelion", "petunia",
+                     "wild pansy", "primula", "sunflower", "pelargonium", "bishop of llandaff", "gaura", "geranium", "orange dahlia", 
+                     "pink-yellow dahlia", "cautleya spicata", "japanese anemone", "black-eyed susan", "silverbush", "californian poppy", 
+                     "osteospermum", "spring crocus", "bearded iris", "windflower", "tree poppy", "gazania", "azalea", "water lily", "rose",
+                     "thorn apple", "morning glory", "passion flower", "lotus", "toad lily", "anthurium", "frangipani", "clematis", 
+                     "hibiscus", "columbine", "desert-rose", "tree mallow", "magnolia", "cyclamen", "watercress", "canna lily", "hippeastrum", 
+                     "bee balm", "ball moss", "foxglove", "bougainvillea", "camellia", "mallow", "mexican petunia", "bromelia", 
+                     "blanket flower", "trumpet creeper", "blackberry lily"]
     
   for i in range(len(total_classes)):
     class_labels.append(i)
@@ -243,7 +243,7 @@ def main():
   #print('Classes under consideration: ', classes)
   logging.info("Classes under consideration: %s", classes)
   ImageNet_CLASSES = len(np.array(class_labels))
-  print(ImageNet_CLASSES)
+  #print(ImageNet_CLASSES)
   #exit()
 
   # Model
@@ -267,7 +267,7 @@ def main():
   model = EfficientNetB0(len(total_classes))
   
   #model = MobileNetV2(len(total_classes))
-  print(model)
+  #print(model)
   #exit()
   model = model.cuda()
   #print(model)
