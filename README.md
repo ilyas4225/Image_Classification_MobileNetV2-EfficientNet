@@ -22,8 +22,7 @@ The datset we are using:
 Include the benchmark results of running multiple model precisions. 
  The Performance tests were run on GPU.
 
-### when model is EfficeintNETB0
-
+### When model is EfficeintNETB0
 | Dataset  | Classes|Resolution| Epochs|Accuracy|
 |----------|--------|----------|-------|--------|
 | Cifar10  | 10     | 32x32    |20     |71.1999%|
@@ -36,8 +35,8 @@ Include the benchmark results of running multiple model precisions.
 | Food101  |101     | 224x224  |15     |50.82508|
 | Cars     |196     | 224x224  |       |        |
 
-### When model is MobileNET_V2
 
+### When model is MobileNET_V2
 | Dataset  | Classes|Resolution| Epochs|Accuracy|
 |----------|--------|----------|-------|--------|
 | Cifar10  | 10     | 32x32    |15     |64.7699%|
