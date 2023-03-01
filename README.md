@@ -26,7 +26,7 @@ Include the benchmark results of running multiple model precisions.
 |     Model    | Dataset  | Classes|Resolution| Epochs|Accuracy|
 ---------------|----------|--------|----------|-------|--------|
 |EfficeintNETB0| Cifar10  | 10     | 32x32    |20     |71.1999%|
-|MobileNET_V2  | Cifar10  | 10     | 32x32    |15     |        |
+|MobileNET_V2  | Cifar10  | 10     | 32x32    |15     |64.7699%|
 |EfficeintNETB0| CINIC10  | 10     | 224x224  |100    |79.5578%|
 |MobileNET_V2  | CINIC10  | 10     | 224x224  |15     |73      |
 |EfficeintNETB0| DTD      | 47     | 224x224  |50     |30.2127 |
