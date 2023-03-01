@@ -27,7 +27,7 @@ Include the benchmark results of running multiple model precisions.
 | Dataset  | Classes|Resolution| Epochs|Accuracy|
 |----------|--------|----------|-------|--------|
 | Cifar10  | 10     | 32x32    |20     |71.1999%|
-| Cifar    | 100    | 32x32    |50     |
+| Cifar10  | 100    | 32x32    |50     |        |
 | CINIC10  | 10     | 224x224  |100    |79.5578%|
 | DTD      | 47     | 224x224  |50     |30.2127 |
 | Flower102| 102    | 224x224  |50     |37.25490|
@@ -40,6 +40,7 @@ Include the benchmark results of running multiple model precisions.
 | Dataset  | Classes|Resolution| Epochs|Accuracy|
 |----------|--------|----------|-------|--------|
 | Cifar10  | 10     | 32x32    |15     |64.7699%|
+| Cifar100 | 100    | 32x32    |       |        |
 | CINIC10  | 10     | 224x224  |15     |73      |
 | DTD      | 47     | 224x224  |50     |26.64   |
 | Flower102| 102    | 224x224  |50     |34.1176 |
