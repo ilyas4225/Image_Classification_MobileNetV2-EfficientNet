@@ -22,19 +22,22 @@ The datset we are using:
 Include the benchmark results of running multiple model precisions. 
  The Performance tests were run on GPU.
 
+## EfficeintNETB0
+
+| Dataset  | Classes|Resolution| Epochs|Accuracy|
+|----------|--------|----------|-------|--------|
+| Cifar10  | 10     | 32x32    |20     |71.1999%|
+| Cifar    | 100    | 32x32    |50     |
+| CINIC10  | 10     | 224x224  |100    |79.5578%|
+| DTD      | 47     | 224x224  |50     |30.2127 |
+| Flower102| 102    | 224x224  |50     |37.25490|
+| Pets     | 37     | 224X224  |50     |65.16304|
+| STL10    |10      | 224x224  |20     |63.00004|
+| Food101  |101     | 224x224  |15     |50.82508|
+
+## EfficeintNETB0
 
 |     Model    | Dataset  | Classes|Resolution| Epochs|Accuracy|
----------------|----------|--------|----------|-------|--------|
-|EfficeintNETB0| Cifar10  | 10     | 32x32    |20     |71.1999%|
-|EfficeintNETB0| CINIC10  | 10     | 224x224  |100    |79.5578%|
-|EfficeintNETB0| DTD      | 47     | 224x224  |50     |30.2127 |
-|EfficientNETB0| Flower102| 102    | 224x224  |50     |37.25490|
-|EfficientNETB0| Pets     | 37     | 224X224  |50     |65.16304|
-|EFficientNETB0| STL10    |10      | 224x224  |20     |63.00004|
-|EfficientNETB0| Food101  |101     | 224x224  |15     |50.82508|
-
-
-
 |MobileNET_V2  | Cifar10  | 10     | 32x32    |15     |64.7699%|
 |MobileNET_V2  | CINIC10  | 10     | 224x224  |15     |73      |
 |MobileNET_V2  | DTD      | 47     | 224x224  |50     |26.64   |
