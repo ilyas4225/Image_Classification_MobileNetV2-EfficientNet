@@ -104,7 +104,7 @@ def main():
     train_data = torchvision.datasets.CIFAR100(root='./data', train=True,
                                         download=True, transform=train_transform)
   
-    test_data = torchvision.datasets.CIFAR10(root='./data', train=False,
+    test_data = torchvision.datasets.CIFAR100(root='./data', train=False,
                                            download=True, transform=test_transform)
 
   if args.dataset == 'STL10':
@@ -146,7 +146,7 @@ def main():
     test_data = torchvision.datasets.StanfordCars(root='./data', split='val',
                                            download=True, transform=test_transform)
 
-                                        
+                                    
 
   # obtain training indices that will be used for validation
   valid_size = args.valid_size
