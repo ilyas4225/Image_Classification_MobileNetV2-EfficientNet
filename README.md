@@ -26,17 +26,21 @@ Include the benchmark results of running multiple model precisions.
 |     Model    | Dataset  | Classes|Resolution| Epochs|Accuracy|
 ---------------|----------|--------|----------|-------|--------|
 |EfficeintNETB0| Cifar10  | 10     | 32x32    |20     |71.1999%|
-|MobileNET_V2  | Cifar10  | 10     | 32x32    |15     |64.7699%|
 |EfficeintNETB0| CINIC10  | 10     | 224x224  |100    |79.5578%|
-|MobileNET_V2  | CINIC10  | 10     | 224x224  |15     |73      |
 |EfficeintNETB0| DTD      | 47     | 224x224  |50     |30.2127 |
-|MobileNET_V2  | DTD      | 47     | 224x224  |50     |26.64   |
 |EfficientNETB0| Flower102| 102    | 224x224  |50     |37.25490|
-|MobileNET_V2  | Flower102| 102    | 224x224  |50     |34.1176 |
 |EfficientNETB0| Pets     | 37     | 224X224  |50     |65.16304|
-|MobileNET_V2  | Pets     | 37     | 224X224  |50     |76.60356|
 |EFficientNETB0| STL10    |10      | 224x224  |20     |63.00004|
 |EfficientNETB0| Food101  |101     | 224x224  |15     |50.82508|
+
+
+
+|MobileNET_V2  | Cifar10  | 10     | 32x32    |15     |64.7699%|
+|MobileNET_V2  | CINIC10  | 10     | 224x224  |15     |73      |
+|MobileNET_V2  | DTD      | 47     | 224x224  |50     |26.64   |
+|MobileNET_V2  | Flower102| 102    | 224x224  |50     |34.1176 |
+|MobileNET_V2  | Pets     | 37     | 224X224  |50     |76.60356|
 |MobileNET_V2  | Food101  |101     | 224x224  |20     |51.04505|
+
 
 
