@@ -33,7 +33,7 @@ Include the benchmark results of running multiple model precisions.
 | Pets     | 37     | 224X224  |50     |65.16304|
 | STL10    |10      | 224x224  |20     |63.00004|
 | Food101  |101     | 224x224  |15     |50.82508|
-| Cars     |196     | 224x224  |       |        |
+| Cars     |196     | 224x224  |35     |50.40   |
 
 
 ### When model is MobileNET_V2
