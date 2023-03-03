@@ -3,7 +3,7 @@ In this project, we have used two models  for image classification ,like Efficie
 
 Firstly, we will pass the chosen dataset in the argument  of dataset and set the batch size  and number of epochs to train the model and set the name of saving log file.
 
-# Demo
+## Demo
 Step 1:  Go back to the project directory src folder
  
  ```
