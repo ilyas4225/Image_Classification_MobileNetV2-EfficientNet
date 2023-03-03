@@ -3,6 +3,7 @@
 See the paper "Inverted Residuals and Linear Bottlenecks:
 Mobile Networks for Classification, Detection and Segmentation" for more details.
 '''
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -42,7 +43,6 @@ class Block(nn.Module):
     # EfficientB0 CIFAR-10 stride = [1, 1, 2, 2, 2, 1, 2, 1, 1]
     # EfficientB0 ImageNet stride = [2, 1, 2, 2, 2, 1, 2, 1, 1] 
 
-
 class MobileNetV2(nn.Module):
     # (expansion, out_planes, num_blocks, stride)
     cfg = [(1,  16, 1, 1),
@@ -81,7 +81,6 @@ class MobileNetV2(nn.Module):
         out = out.view(out.size(0), -1)
         out = self.linear(out)
         return out
-
 
 def test():
     net = MobileNetV2()
