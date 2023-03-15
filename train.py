@@ -20,6 +20,7 @@ from torch.autograd import Variable
 from Subsets import *
 from models import *
 
+
 parser = argparse.ArgumentParser("Classification")
 parser.add_argument('--data', type=str, default='/home/msiddi01/ImageNet_Vehicles', help='location of the data corpus')
 parser.add_argument('--use_model', type=str, default='Conv', help='Sep or Conv')
@@ -147,7 +148,6 @@ def main():
                                            download=True, transform=test_transform)
 
                                     
-
   # obtain training indices that will be used for validation
   valid_size = args.valid_size
   num_train = len(train_data)
@@ -494,7 +494,6 @@ def classwisetest(model, classes, test_queue, criterion):
     logging.info('\nTest Accuracy (Overall): %2f%% (%2d/%2d)' % (
         100. * np.sum(class_correct) / np.sum(class_total),
         np.sum(class_correct), np.sum(class_total)))    
-
 
 
 if __name__ == '__main__':
