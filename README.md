@@ -43,6 +43,8 @@ Include the benchmark results of running multiple model precisions.
 | STL10    |10      | 224x224  |20     |63.00004|
 | Food101  |101     | 224x224  |15     |50.82508|
 | Cars     |196     | 224x224  |35     |50.40   |
+|Aircraft  |100     | 224x224  |50     |47.0747 |
+
 
 
 ### When model is MobileNET_V2
@@ -55,6 +57,7 @@ Include the benchmark results of running multiple model precisions.
 | Flower102| 102    | 224x224  |50     |34.1176 |
 | Pets     | 37     | 224X224  |50     |76.60356|
 | Food101  |101     | 224x224  |20     |51.04505|
+|Aircraft  |100     | 224x224  |50     |35.43354|
 
 
 
