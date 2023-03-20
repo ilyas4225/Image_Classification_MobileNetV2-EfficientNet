@@ -20,7 +20,6 @@ from torch.autograd import Variable
 from Subsets import *
 from models import *
 
-
 parser = argparse.ArgumentParser("Classification")
 parser.add_argument('--data', type=str, default='/home/msiddi01/ImageNet_Vehicles', help='location of the data corpus')
 parser.add_argument('--use_model', type=str, default='Conv', help='Sep or Conv')
@@ -52,7 +51,6 @@ logging.basicConfig(stream=sys.stdout, level=logging.INFO,
 fh = logging.FileHandler(os.path.join(args.save, 'log.txt'))
 fh.setFormatter(logging.Formatter(log_format))
 logging.getLogger().addHandler(fh)
-
 
 def main():
   if not torch.cuda.is_available():
@@ -457,7 +455,6 @@ def infer(valid_queue, model, criterion):
       logging.info('valid %03d %e %f', step, objs.avg, top1.avg)
 
   return top1.avg, objs.avg
-
 
 def classwisetest(model, classes, test_queue, criterion):
     
