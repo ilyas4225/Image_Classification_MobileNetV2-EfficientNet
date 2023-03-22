@@ -1,8 +1,7 @@
 # Image_Classification_MobileNetV2-EfficientNet
 In this project, there are many models are available but we have used two models  for image classification ,like EfficientNetB0 and MobileNETV2 on different dataset 
 
-Firstly, we will pass the chosen dataset in the argument  of dataset and set the batch size  and number of epochs to train the model and set the name of saving log file.
-
+Firstly, we will pass the chosen dataset in the argument  of dataset and set the batch size  and number of epochs to train the model and set the name of saving log file.likw below DTD dataset is choosed and the batch size is 16 we run with 50 epochs 
 
 ## Demo
 Step 1:  Go back to the project directory src folder
