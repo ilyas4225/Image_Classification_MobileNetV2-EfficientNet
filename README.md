@@ -31,18 +31,18 @@ Include the benchmark results of running multiple model precisions.
  The Performance tests were run on GPU.
 
 ### When model is EfficeintNETB0
-| Dataset  | Classes|Resolution| Epochs|Accuracy|
-|----------|--------|----------|-------|--------|
-| Cifar10  | 10     | 32x32    |20     |71.1999%|
-| Cifar100 | 100    | 32x32    |50     |27.21 % |
-| CINIC10  | 10     | 224x224  |100    |79.5578%|
-| DTD      | 47     | 224x224  |50     |30.2127 |
-| Flower102| 102    | 224x224  |50     |37.25490|
-| Pets     | 37     | 224X224  |50     |65.16304|
-| STL10    |10      | 224x224  |20     |63.00004|
-| Food101  |101     | 224x224  |15     |50.82508|
-| Cars     |196     | 224x224  |35     |50.40   |
-|Aircraft  |100     | 224x224  |50     |47.0747 |
+| Dataset  | Classes|Resolution| Epochs|EfficeintNETB0|MobileNETV2|
+|----------|--------|----------|-------|--------------|-----------|
+| Cifar10  | 10     | 32x32    |20     |71.1999%      |   64.7699%|
+| Cifar100 | 100    | 32x32    |50     |27.21 %       |   29.05 % |
+| CINIC10  | 10     | 224x224  |100    |79.5578%      |   73      |
+| DTD      | 47     | 224x224  |50     |30.2127       |   26.64   |
+| Flower102| 102    | 224x224  |50     |37.25490      |   34.1176 |
+| Pets     | 37     | 224X224  |50     |65.16304      |   76.60356|
+| STL10    |10      | 224x224  |20     |63.00004      |   51.04505|
+| Food101  |101     | 224x224  |15     |50.82508      |
+| Cars     |196     | 224x224  |35     |50.40         |
+|Aircraft  |100     | 224x224  |50     |47.0747       |  35.43354|
 
 
 
