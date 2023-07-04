@@ -33,7 +33,7 @@ Include the benchmark results of running multiple model precisions.
 ### When model is EfficeintNETB0
 | Dataset  | Classes|Resolution| Epochs|EfficeintNETB0|MobileNETV2|
 |----------|--------|----------|-------|--------------|-----------|
-| Cifar10  | 10     | 32x32    |20     |71.1999%      |   64.7699%|
+| Cifar10  | 10     | 32x32    |50     |71.1999%      |   %|
 | Cifar100 | 100    | 32x32    |50     |27.21 %       |   29.05 % |
 | CINIC10  | 10     | 224x224  |100    |79.5578%      |   73      |
 | DTD      | 47     | 224x224  |50     |30.2127       |   26.64   |
